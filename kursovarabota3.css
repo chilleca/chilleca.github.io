@@ -1,0 +1,82 @@
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 100px;
+      border-radius: 10px;
+
+
+    }
+    
+
+    
+    
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 639px}
+
+    body {
+   background-image: url("https://i.pinimg.com/originals/a3/04/16/a304168113a5f756762b40e998e21b04.jpg");
+
+}
+.navbar-brand{
+  border-radius:10px;
+  text-shadow: 10px;
+}
+
+
+
+
+.btn-success{
+ width: 50%;
+border-radius: 500px;
+  
+    background: #000000;
+    
+
+}
+.huqmiqnko {
+  width: 50%;
+}
+
+    
+h1{
+  font-size: 28px;
+  text-shadow: 2px 0px #000000;
+}
+select {
+width:50%;
+border-radius: 500px;
+
+}
+
+
+.wrap-login100 {
+  width: 90%;
+  padding: 20px 20px 20px 20px;
+  
+  border-radius: 100px;
+  overflow: hidden;
+  
+ 
+object-position: center;
+
+opacity: 0.6;
+  background:     #C0C0C0  ;
+  
+  
+}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 109%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      
+      .row.content {height:auto;} 
+    }
