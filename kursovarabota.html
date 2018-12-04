@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script>
+
+$(document).ready(function(){
+  // convert selects already on the page at dom load
+  $('select.form-control').combobox();  
+    
+  $('#it').click(function(e){
+    $('ul.dropdown-menu').toggle();
+  });
+  
+//  $('input').focus(function(e){
+//    $('ul.dropdown-menu').toggle();
+//  });
+  
+});
+
+  function checkforblanc()
+  {
+    if (document.getElementById('usr').value == ""){
+      alert('Моля въведете Име');
+      return false;
+    }
+
+    if (document.getElementById('fml').value == "")
+      
+    {
+      
+      alert('Моля въведете Фамилия');
+      return false;
+    }
+    if (document.getElementById('fnm').value == "")
+    {
+      alert('Моля въведете Факултетен Номер');
+      return false;
+    }
+    if (document.getElementById('kur').value == "")
+    {
+      alert('Моля въведете Курс');
+      return false;
+    }
+    if (document.getElementById('spec').value == "")
+    {
+      alert('Моля въведете Специалност');
+      return false;
+    }
+    if (document.getElementById('grp').value == "")
+    {
+      alert('Моля въведете Група');
+      return false;
+    }
+    else 
+
+    {
+      window.location ="kursovarabota3.html"
+    }
+    
+  }
+
+
+  </script>
+  <title>Groop Formation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="kursovarabota.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="#"> Ту ВАРНА</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<!--<div class="container-fluid text-center">     -->
+  
+      
+    <div align="center">
+    <div class="wrap-login100" >
+    <div class="form-group">
+      
+      <label for="usr"><h1>Име:</h1></label>
+      <input type="text" class="form-control" id="usr">
+</div>
+    
+    <div class="form-group">
+      <label for="pwd"><h1>Фамилия:</h1></label>
+      <input type="text" class="form-control" id="fml">
+    </div>
+     <div class="form-group">
+      <label for="pwd"><h1>Фак.номер:</h1></label>
+      <input type="text" class="form-control" id="fnm">
+    </div>
+     <div class="form-group">
+      <label for="pwd"><h1>Курс:</h1></label>
+      <input type="text" class="form-control" id="kur">
+    </div>
+       <div class="form-group">
+      <label for="pwd"><h1>Специалност:</h1></label>
+      <input type="text" class="form-control" id="spec">
+    </div>
+       <div class="form-group">
+      <label for="pwd"><h1>Група:</h1></label>
+      <input type="text" class="form-control" id="grp" >
+    </div>
+   
+  <button type="button" value="submit" id="submit" class="btn btn-success" onclick="checkforblanc()" onsubmit="function();">Продължи-></button>
+</div>
+
+</div>
+
+
+
+
+
+</body>
