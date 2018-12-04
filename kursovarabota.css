@@ -1,0 +1,110 @@
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 7px;
+      border-radius: 10px;
+
+    }
+    
+.alert {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+    
+    
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 639px}
+
+    body {
+   background-image: url("https://i.pinimg.com/originals/a3/04/16/a304168113a5f756762b40e998e21b04.jpg");
+
+}
+.navbar-brand{
+  border-radius:10px;
+  text-shadow: 10px;
+}
+.btn-success{
+  
+    padding:20px;
+
+}
+
+.form-control {
+width: 60%;
+height: 36px;
+  border-radius:500px;
+  text-rendering: middle;
+  font-size:18px;
+
+
+
+}
+
+.btn-success{
+ width: 50%;
+border-radius: 500px;
+  
+    background: #000000;
+    
+
+}
+
+    .form-group {
+
+
+       width: 100%;  
+  
+
+  
+
+  
+     }
+h1{
+  font-size: 28px;
+  text-shadow: 2px 0px #000000;
+}
+
+.wrap-login100 {
+  width: 68%;
+  
+  border-radius: 100px;
+  overflow: hidden;
+  
+ 
+object-position: center;
+
+opacity: 0.6;
+  background:     #C0C0C0  ;
+  
+  
+}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 109%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      
+      .row.content {height:auto;} 
+    }
