@@ -18,47 +18,7 @@ $(document).ready(function(){
   
 });
 
-  function checkforblanc()
-  {
-    if (document.getElementById('usr').value == ""){
-      alert('Моля въведете Име');
-      return false;
-    }
-
-    if (document.getElementById('fml').value == "")
-      
-    {
-      
-      alert('Моля въведете Фамилия');
-      return false;
-    }
-    if (document.getElementById('fnm').value == "")
-    {
-      alert('Моля въведете Факултетен Номер');
-      return false;
-    }
-    if (document.getElementById('kur').value == "")
-    {
-      alert('Моля въведете Курс');
-      return false;
-    }
-    if (document.getElementById('spec').value == "")
-    {
-      alert('Моля въведете Специалност');
-      return false;
-    }
-    if (document.getElementById('grp').value == "")
-    {
-      alert('Моля въведете Група');
-      return false;
-    }
-    else 
-
-    {
-      window.location ="kursovarabota3.html"
-    }
-    
-  }
+  
 
 
   </script>
@@ -92,43 +52,45 @@ $(document).ready(function(){
   
 <!--<div class="container-fluid text-center">     -->
   
-      
+      <form action="db.php" method="POST" >
     <div align="center">
-    <div class="wrap-login100" >
+    <div class="wrap-login100">
     <div class="form-group">
       
       <label for="usr"><h1>Име:</h1></label>
-      <input type="text" class="form-control" id="usr">
+      <input type="text" name="usr"class="form-control" id="usr"required>
 </div>
     
     <div class="form-group">
       <label for="pwd"><h1>Фамилия:</h1></label>
-      <input type="text" class="form-control" id="fml">
+      <input type="text" name="fml" class="form-control" id="fml"required>
     </div>
      <div class="form-group">
       <label for="pwd"><h1>Фак.номер:</h1></label>
-      <input type="text" class="form-control" id="fnm">
+      <input type="text" name="fnm"class="form-control" id="fnm" required>
     </div>
      <div class="form-group">
       <label for="pwd"><h1>Курс:</h1></label>
-      <input type="text" class="form-control" id="kur">
+      <input type="text" name="kur"class="form-control" id="kur" required>
     </div>
        <div class="form-group">
       <label for="pwd"><h1>Специалност:</h1></label>
-      <input type="text" class="form-control" id="spec">
+      <input type="text" name="spec"class="form-control" id="spec" required>
     </div>
        <div class="form-group">
       <label for="pwd"><h1>Група:</h1></label>
-      <input type="text" class="form-control" id="grp" >
+      <input type="text" name="grp"class="form-control" id="grp" required >
     </div>
    
-  <button type="button" value="submit" id="submit" class="btn btn-success" onclick="checkforblanc()" onsubmit="function();">Продължи-></button>
+ <button type="submit" value="submit" id="submit" class="btn btn-success"  onsubmit="checkforblanc()">Продължи-></button>
+
+ <input type="submit" value="submit"> 
 </div>
 
 </div>
 
 
 
-
+</form>
 
 </body>
